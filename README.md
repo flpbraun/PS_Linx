@@ -37,5 +37,23 @@ Web application para Processo Seletivo Linx
 - E receberemos a porcentagem dos testes feitos e passados/aprovados.
 
 # Part_02
-  
+
+- Primeiro, precisamos instalar as dependencia dessa parte atraves do terminal:
+
+>>> pip install pandas simplejson request
+
+- Apos, podemos abrir o programa sanit_dump.py e mudar o path para onde se encontra o arquivos input-dump.json
+
+- Para a segunda parte temos que estar no diretorio part_02 e no terminal colocar para rodar o agregador de URL que inicara um servidor:
+
+>>> ruby url-aggregator-api.rb
+
+- Pode-se entao rodar o programa sanit_dump.py digitando no terminal:
+
+>>> python sanit_dump.py
+
+- O programa ira testar todas as requisicoes no input-dump.json, eliminando as com mensagem 404 e ira salvar um arquivo de output com todos os produtcId, porem somente tres imagem de cada produto. Dentro do programa voce podera mudar o save_path para onde quiser tambem.
+
+
+
 
