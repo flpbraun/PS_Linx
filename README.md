@@ -22,7 +22,9 @@ Web application para Processo Seletivo Linx
 - Assim o servidor ira comecar a rodar e podemos pelo terminal testa-lo requisitando a pagina principal, ou a pagina onde estarao guardados os novos produtos ou postando um novo produto:
 
 >>> curl http://127.0.0.1:5000/      # pagina inicial
+
 >>> curl http://127.0.0.1:5000/produts     # pagina de armazenamento
+
 >>>curl -H "Content-Type: application/json" -d '{"name":"test_name","id":123}' http://127.0.0.1:5000/products
 
 - Ao tentar postar o mesmo arquivo JSON num periodo menor que 10 minutos, uma mensagem de erro sera exibida e os novo produto nao entrara na base de dados.
