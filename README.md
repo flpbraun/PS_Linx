@@ -28,7 +28,8 @@ Web application para Processo Seletivo Linx
 - Ao tentar postar o mesmo arquivo JSON num periodo menor que 10 minutos, uma mensagem de erro sera exibida e os novo produto nao entrara na base de dados.
 
   # test_core.py
-  
+ 
+- Precisamos primeiro mudar a variavel path dentro do pregrama test_core.py para o diretorio onde se esta rodando o programa.
 - Estando no diretorio onde esta presente o test_core.py e o prod_app.py podemos rodar o teste de todas as funcionalidades do API digitando no terminal:
 
 >>> py.test --cov=prod_app
